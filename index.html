@@ -11,6 +11,9 @@
     Hello World 
     <a-scene>
         <!-- <a-marker-camera preset="hiro"></a-marker-camera> -->
+        <a-assets>
+            <img id="testimg" src="assets/img/red-white-cat-i-white-studio.jpg">
+        </a-assets>
 
         <!--box test-->
         <a-box color="#689f39"
@@ -19,8 +22,11 @@
                depth="1.5"
                position="3 5 -7">
         </a-box>
-        <a-circle position="0 0 1"
+        <a-circle position="0 0 3"
         color="#333333">
+        <a-image src="#testimg" scale="2 2 1" position="3 -1 -7">
+
+        </a-image>
 </a-circle>
 
         <!--cylinder test-->

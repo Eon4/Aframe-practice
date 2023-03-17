@@ -10,11 +10,17 @@
 <body>
     Hello World 
     <a-scene>
+        <!-- <a-marker-camera preset="hiro"></a-marker-camera> -->
+
         <!--box test-->
         <a-box color="#689f39"
                widt="7"
                height="2.5"
-               depth="1.5">
+               depth="1.5"
+               position="3 5 -7">
+               <a-circle position="0 0 1"
+                         color="#333333">
+               </a-circle>
         </a-box>
 
         <!--cylinder test-->
@@ -23,8 +29,9 @@
                     radius="2"
                     segment-radial="4"
                     open-ended="true"
-                    side="double">
-                    
+                    side="double"
+                    position="0 0 -7">
+
         </a-cylinder>
     </a-scene>
     
